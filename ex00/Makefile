@@ -1,7 +1,7 @@
 NAME		=	Bureaucrat
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++17 -Wno-shadow
-INCLUDE	=	-I include
+INCLUDE		=	-I include
 RM			=	rm -f
 
 _HEADER		=	Bureaucrat.hpp
