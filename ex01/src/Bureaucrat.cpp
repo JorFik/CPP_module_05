@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 15:01:46 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/29 18:12:27 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/08/29 18:37:05 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,8 @@ void	Bureaucrat::demoteBureaucrat(void)
 
 std::ostream	&operator <<(std::ostream &out, Bureaucrat const &bureaucrat)
 {
-	out << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade();
+	out << bureaucrat.getName() << ", bureaucrat grade ";
+	out << bureaucrat.getGrade();
 	return (out);
 }
 
@@ -93,7 +94,8 @@ void	Bureaucrat::signForm(Form &form)
 	}
 	try{
 		form.beSigned(*this);
-		std::cout << this->getName() << " signed " << form.getName() << "." << std::endl;
+		std::cout << this->getName() << " signed " << form.getName();
+		std::cout << "." << std::endl;
 	}
 	catch(const std::exception &e)
 	{
