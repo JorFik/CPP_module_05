@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 13:02:16 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/29 17:20:04 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/08/29 18:34:42 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 #include "BureaucratExceptions.hpp"
 
 class Form;
-class AGradeTooHighException;
-class AGradeTooLowException;
 
 class Bureaucrat
 {
