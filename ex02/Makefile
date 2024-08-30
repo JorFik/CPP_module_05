@@ -1,7 +1,7 @@
 NAME		=	real_work
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++17 -Wno-shadow
-_INCLUDE		=	include include/Forms
+_INCLUDE	=	include include/Forms
 INCLUDE		=	$(addprefix -I, $(_INCLUDE))
 RM			=	rm -f
 
@@ -49,7 +49,6 @@ $(NAME): $(OBJ)
 	@$(CXX) $(CXXFLAGS) $(INCLUDE) $^ -o $@
 	@printf $(GREEN_FORMAT) "Linking complete!"
 
-# @printf $(RED_FORMAT) "Removing binaries..."
 clean:
 	@for obj in $(OBJ); do \
 		printf $(RED_FORMAT) "Removing $$obj...";\
