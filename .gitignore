@@ -5,9 +5,10 @@ en.subject.pdf
 ex00/Bureaucrat
 ex01/Forms
 ex02/real_work
+ex03/Interns_for_the_win
 
 # Generated files
-ex02/*_shrubbery
+*_shrubbery
 
 # Prerequisites
 *.d
