@@ -2,8 +2,12 @@
 en.subject.pdf
 
 # Executables
-Bureaucrat
-Forms
+ex00/Bureaucrat
+ex01/Forms
+ex02/real_work
+
+# Generated files
+ex02/*_shrubbery
 
 # Prerequisites
 *.d
