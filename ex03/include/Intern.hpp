@@ -6,7 +6,7 @@
 /*   By: JFikents <Jfikents@student.42Heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 14:11:10 by JFikents          #+#    #+#             */
-/*   Updated: 2024/08/30 14:57:24 by JFikents         ###   ########.fr       */
+/*   Updated: 2024/09/02 21:36:34 by JFikents         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@
 # include "AForm.hpp"
 # include "AExceptions.hpp"
 
-enum FormType
+enum class FormType
 {
 	SHRUBBERY_CREATION,
 	ROBOTOMY_REQUEST,
-	PRESIDENTIAL_PARDON
+	PRESIDENTIAL_PARDON,
+	UNKNOWN
 };
 
 class Intern
@@ -30,7 +31,6 @@ class Intern
 		AForm	*_makeShrubberyCreationForm(std::string const &target);
 		AForm	*_makeRobotomyRequestForm(std::string const &target);
 		AForm	*_makePresidentialPardonForm(std::string const &target);
-		enum FormType	find_form_type(std::string const &form_name);
 
 	public:
 		Intern()									= default;
